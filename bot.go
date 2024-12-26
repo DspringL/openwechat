@@ -43,6 +43,11 @@ func (b *Bot) Alive() bool {
 	}
 }
 
+// @description: 设置UUID，可以用来手动登录用
+func (b *Bot) SetUUID(uuid string) {
+	b.loginUUID = uuid
+}
+
 // GetCurrentUser 获取当前的用户
 //
 //	self, err := bot.GetCurrentUser()
